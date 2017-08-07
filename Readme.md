@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Sergei Pomoshnikov](https://up.htmlacademy.ru/htmlcss/18/user/455635).
-* Наставник: `Неизвестно`.
+* Наставник: [Марина Милитенко](https://up.htmlacademy.ru/htmlcss/18/user/227898).
 
 ---
 
