@@ -27,11 +27,9 @@
       </div>
       <div class="menu-bottom">
         <div class="container">
-          <div class="header-desc">
-            <p>Интернет-магазин строительных материалов 
-              и инструментов для ремонта
-            </p>
-          </div>
+          <p class="header-desc">Интернет-магазин строительных материалов 
+            и инструментов для ремонта
+          </p>
           <div class="header-contacts">
             <span class="phone">+7 (812) 555-05-55</span>               
             <span class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
@@ -117,8 +115,8 @@
                 <div class="image-item">
                   <img src="img/bfg-9000.jpg" alt="bfg 9000" width="218" height="165">
                 </div>
-                <div class="title-item">Перфоратор BOSCH BFG 9000</div>
-                <div class="old-price">32500 Р.</div>
+                <h3 class="title-item">Перфоратор BOSCH BFG 9000</h3>
+                <span class="old-price">32500 Р.</span>
                 <a href="#" class="btn price-btn">25500р.</a>
               </li>
               <li class="products-item">
@@ -129,8 +127,8 @@
                 <div class="image-item">
                   <img src="img/bfg-2000.jpg" alt="bfg 3000" width="218" height="165">
                 </div>            
-                <div class="title-item">Перфоратор BOSCH BFG 3000</div>           
-                <div class="old-price">22500 Р.</div>
+                <h3 class="title-item">Перфоратор BOSCH BFG 3000</h3>           
+                <span class="old-price">22500 Р.</span>
                 <a href="#" class="btn price-btn">15500р.</a>             
               </li>
               <li class="products-item">
@@ -141,8 +139,8 @@
                 <div class="image-item">
                   <img src="img/bfg-6000.jpg" alt="bfg 6000" width="218" height="165">
                 </div>            
-                <div class="title-item">Перфоратор BOSCH BFG 6000</div>          
-                <div class="old-price">30500 Р.</div>
+                <h3 class="title-item">Перфоратор BOSCH BFG 6000</h3>          
+                <span class="old-price">30500 Р.</span>
                 <a href="#" class="btn price-btn">25500р.</a>
               </li> 
               <li class="products-item">
@@ -153,8 +151,8 @@
                 <div class="image-item">
                   <img src="img/bfg-2000.jpg" alt="bfg 2000" width="218" height="165">
                 </div>           
-                <div class="title-item">Перфоратор BOSCH BFG 2000</div>   
-                <div class="old-price"></div>           
+                <h3 class="title-item">Перфоратор BOSCH BFG 2000</h3>   
+                <span class="old-price"></span>           
                 <a href="#" class="btn price-btn">12500р.</a>
               </li>
             </ul>
@@ -216,21 +214,41 @@
             Хороший интернет-магазин отличается от плохого не только ценами!<br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
-          <ul class="services-choice">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Кредит</a></li>
-          </ul>
-          <div class="services-transfer">
-            <h3>Доставка</h3>
-            <p>
-              Мы с удовольствием доставим ваш товар прямо 
-              к вашему подъезду совершенно бесплатно!
-            </p>
-            <p>  
-              Ведь мы неплохо заработаем,
-              поднимая его на ваш на этаж!
-            </p>  
+          <div class="services-slider">
+            <ul class="services-choice">
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Гарантия</a></li>
+              <li><a href="#">Кредит</a></li>
+            </ul>
+            <div class="slide services-transfer">
+              <h3>Доставка</h3>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо 
+                к вашему подъезду совершенно бесплатно!
+              </p>
+              <p>  
+                Ведь мы неплохо заработаем,
+                поднимая его на ваш на этаж!
+              </p>  
+            </div>
+            <div class="slide services-garantie">
+              <h3>Гарантия</h3>
+              <p>
+                Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгаранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              </p>
+              <p>
+                Дом уж восстановите как-нибудь сами.
+              </p>
+            </div>
+            <div class="slide services-credit">
+              <h3>Кредит</h3>
+              <p>
+                Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь
+              </p>
+            </div>
           </div>
         </div>
       </section> 
@@ -319,6 +337,7 @@
       </div>
     </footer>
     <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Напишите нам</h2>
       <button class="modal-content-close" type="button" title="close">Закрыть</button>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">        
         <div class="half-width">
