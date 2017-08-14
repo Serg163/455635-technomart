@@ -1,0 +1,23 @@
+body {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Cuprum", "PT Sans Narrow", sans-serif;
+}
+
+.tile h3 {
+	font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Cuprum", "PT Sans Narrow", sans-serif;
+}
+
+.products-title h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #3d546e;
+  font-weight: 400;
+  font-family: "Cuprum", "PT Sans Narrow", sans-serif;
+}
