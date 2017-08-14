@@ -107,8 +107,8 @@
               <a href="#" class="btn products-btn">Все популярные товары</a> 
             </div>
             <ul class="products-list"> 
-              <li class="products-item">
-                <div class="actions">
+              <li class="product-item">
+                <div class="product-actions">
                   <a href="#" class="btn buy-btn">Купить</a>   
                   <a href="#" class="btn bookmark-btn">В закладки</a>
                 </div>
@@ -117,10 +117,10 @@
                 </div>
                 <h3 class="title-item">Перфоратор BOSCH BFG 9000</h3>
                 <span class="old-price">32500 Р.</span>
-                <a href="#" class="btn price-btn">25500р.</a>
+                <span class="btn price-btn">25500р.</span>
               </li>
-              <li class="products-item">
-                <div class="actions">
+              <li class="product-item">
+                <div class="product-actions">
                   <a href="#" class="btn buy-btn">Купить</a>   
                   <a href="#" class="btn bookmark-btn">В закладки</a>
                 </div>
@@ -129,10 +129,10 @@
                 </div>            
                 <h3 class="title-item">Перфоратор BOSCH BFG 3000</h3>           
                 <span class="old-price">22500 Р.</span>
-                <a href="#" class="btn price-btn">15500р.</a>             
+                <span class="btn price-btn">15500р.</span>             
               </li>
-              <li class="products-item">
-                <div class="actions">
+              <li class="product-item">
+                <div class="product-actions">
                   <a href="#" class="btn buy-btn">Купить</a>   
                   <a href="#" class="btn bookmark-btn">В закладки</a>
                 </div>
@@ -141,10 +141,10 @@
                 </div>            
                 <h3 class="title-item">Перфоратор BOSCH BFG 6000</h3>          
                 <span class="old-price">30500 Р.</span>
-                <a href="#" class="btn price-btn">25500р.</a>
+                <span class="btn price-btn">25500р.</span>
               </li> 
-              <li class="products-item">
-                <div class="actions">
+              <li class="product-item">
+                <div class="product-actions">
                   <a href="#" class="btn buy-btn">Купить</a>   
                   <a href="#" class="btn bookmark-btn">В закладки</a>
                 </div>
@@ -153,7 +153,7 @@
                 </div>           
                 <h3 class="title-item">Перфоратор BOSCH BFG 2000</h3>   
                 <span class="old-price"></span>           
-                <a href="#" class="btn price-btn">12500р.</a>
+                <span class="btn price-btn">12500р.</span>
               </li>
             </ul>
           </section>
@@ -312,19 +312,17 @@
             © 2010–2016 Компания «Техномарт»<br> 
             Все права защищены
           </p>
-          <div class="footer-social">
-            <ul>
-              <li>
-                <a class="social-btn social-btn-vk" href="#">вконтакте</a> 
-              </li>
-              <li>
-                <a class="social-btn social-btn-fb" href="#">фейсбук</a>
-              </li>
-              <li>
-                <a class="social-btn social-btn-inst" href="#">инстаграм</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="footer-social">
+            <li>
+              <a class="social-btn social-btn-vk" href="#">вконтакте</a> 
+            </li>
+            <li>
+              <a class="social-btn social-btn-fb" href="#">фейсбук</a>
+            </li>
+            <li>
+              <a class="social-btn social-btn-inst" href="#">инстаграм</a>
+            </li>
+          </ul>
           <div class="footer-feedback"> 
             <span>Обратная связь:</span>
             <a href="#">mail@htmlacademy.ru</a>                     
@@ -340,24 +338,27 @@
       <h2 class="visually-hidden">Напишите нам</h2>
       <button class="modal-content-close" type="button" title="close">Закрыть</button>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">        
-        <div class="half-width">
+        <fieldset class="half-width">
           <label for="name">Ваше имя:</label>
           <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-        </div>
-        <div class="half-width">
+        </fieldset>
+        <fieldset class="half-width">
           <label for="mail">Ваш e-mail:</label>
           <input type="text" name="mail" id="mail" placeholder="Для отправки ответа">
-        </div>
-        <label for="text">Текст письма:</label>
-        <textarea name="text" id="text" cols="20" rows="6">  
-        В свободной форме  
-        </textarea>       
-        <div class="send">
-          <button type="submit" class="btn" name="send">Отправить</button>
+        </fieldset>
+        <fieldset class="modal-textarea">
+          <label for="text">Текст письма:</label>
+          <textarea name="text" id="text" cols="20" rows="6">  
+          В свободной форме  
+          </textarea>   
+        </fieldset>    
+        <div class="modal-send">
+          <button type="submit" class="btn modal-btn" name="send">Отправить</button>
         </div>
       </form> 
     </section>
     <section class="modal modal-map">
+      <h2 class="visually-hidden">Карта</h2>
       <button class="modal-content-close" type="button" title="close">Закрыть</button>
       <div id="yandex-map"></div>
     </section>
