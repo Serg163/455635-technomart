@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -37,8 +40,8 @@
             <span class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </div>
           <div class="header-entry">
-            <a class="login" href="#">Войти</a>
-            <a class="registration" href="#">Регистрация</a>
+            <a class="profile login" href="#">Войти</a>
+            <a class="profile registration" href="#">Регистрация</a>
           </div>
           <div class="personal-area">
             <a class="personal-area-name" href="#">Равшан Джамшутович</a>
@@ -92,7 +95,7 @@
                   </div>
                   <div class="slide-2">
                     <h3>Дрели</h3>
-                    <span>Соседям на радость</span>
+                    <span>Соседям на радость!</span>
                     <a href="catalog.html" class="btn">Открыть каталог</a>
                   </div>
                 </div>
@@ -115,8 +118,8 @@
             <ul class="products-list"> 
               <li class="product-item">
                 <div class="product-actions">
-                  <a href="#" class="btn buy-btn">Купить</a>   
-                  <a href="#" class="btn bookmark-btn">В закладки</a>
+                  <a href="#" class="btn actions-btn buy-btn">Купить</a>   
+                  <a href="#" class="btn actions-btn bookmark-btn">В закладки</a>
                 </div>
                 <div class="product-image">
                   <img src="img/bfg-9000.jpg" alt="bfg 9000" width="218" height="165">
@@ -127,8 +130,8 @@
               </li>
               <li class="product-item">
                 <div class="product-actions">
-                  <a href="#" class="btn buy-btn">Купить</a>   
-                  <a href="#" class="btn bookmark-btn">В закладки</a>
+                  <a href="#" class="btn actions-btn buy-btn">Купить</a>   
+                  <a href="#" class="btn actions-btn bookmark-btn">В закладки</a>
                 </div>
                 <div class="product-image">
                   <img src="img/bfg-2000.jpg" alt="bfg 3000" width="218" height="165">
@@ -139,8 +142,8 @@
               </li>
               <li class="product-item">
                 <div class="product-actions">
-                  <a href="#" class="btn buy-btn">Купить</a>   
-                  <a href="#" class="btn bookmark-btn">В закладки</a>
+                  <a href="#" class="btn actions-btn buy-btn">Купить</a>   
+                  <a href="#" class="btn actions-btn bookmark-btn">В закладки</a>
                 </div>
                 <div class="product-image">
                   <img src="img/bfg-6000.jpg" alt="bfg 6000" width="218" height="165">
@@ -151,8 +154,8 @@
               </li> 
               <li class="product-item flag-new">
                 <div class="product-actions">
-                  <a href="#" class="btn buy-btn">Купить</a>   
-                  <a href="#" class="btn bookmark-btn">В закладки</a>
+                  <a href="#" class="btn actions-btn buy-btn">Купить</a>   
+                  <a href="#" class="btn actions-btn bookmark-btn">В закладки</a>
                 </div>
                 <div class="product-image">
                   <img src="img/bfg-2000.jpg" alt="bfg 2000" width="218" height="165">
@@ -222,9 +225,9 @@
           </p>
           <div class="services-slider">
             <ul class="services-choice">
-              <li><a href="#">Доставка</a></li>
-              <li><a href="#">Гарантия</a></li>
-              <li><a href="#">Кредит</a></li>
+              <li><a class="slide-transfer" href="#">Доставка</a></li>
+              <li><a class="slide-garantie" href="#">Гарантия</a></li>
+              <li><a class="slide-credit" href="#">Кредит</a></li>
             </ul>
             <div class="slide services-transfer">
               <h3 class="slide-title">Доставка</h3>
@@ -254,6 +257,7 @@
                 Залезть в долговую яму стало проще!
                 Кредитные консультанты придут вам на помощь
               </p>
+              <a href="#" class="btn credit-btn">Отправить заявку</a>
             </div>
           </div>
         </div>
@@ -293,7 +297,7 @@
       <div class="footer-top">
         <div class="container">               
           <span class="logo logo-footer">Техномарт</span>         
-          <ul class="footer-navigation-top">
+          <ul class="footer-navigation footer-navigation-top">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Каталог</a></li>
@@ -304,7 +308,7 @@
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
             +7 (812) 555-05-55
           </p>
-          <ul class="footer-navigation-bottom">
+          <ul class="footer-navigation footer-navigation-bottom">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструмент</a></li>
@@ -331,11 +335,11 @@
           </ul>
           <div class="footer-feedback"> 
             <span>Обратная связь:</span>
-            <a href="#">mail@htmlacademy.ru</a>                     
+            <a class="footer-link" href="#">mail@htmlacademy.ru</a>                     
           </div>
           <div class="footer-developer">
             <span>Разработано — </span>
-            <a href="htmlacademy.ru">htmlacademy.ru</a>
+            <a class="footer-link" href="htmlacademy.ru">htmlacademy.ru</a>
           </div>
         </div>
       </div>
