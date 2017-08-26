@@ -5,17 +5,23 @@ body {
   line-height: 24px;
   color: #000000;
   font-weight: 400;
-  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-family: "PT Sans", "Cuprum", "Arial",  sans-serif;
 }
 
 a {
   text-decoration: none;
+  font: inherit;
+  color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
 }
 
 .btn {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
@@ -45,13 +51,13 @@ a {
 .menu-top {
   font-size: 17px;
   line-height: 18px;
-  font-family: "Cuprum", "PT Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
   color: #ffffff;
   background-color: #293449;
 }
 
 .logo {
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
@@ -100,12 +106,7 @@ a {
 }
 
 .user-block a {
-  color: #ffffff;
   background-color: #293449;
-}
-
-.user-block .order {
-  background-color: #63a63e;
 }
 
 .user-block a:hover {
@@ -115,6 +116,10 @@ a {
 .user-block a:active {
   background-color: #161d29;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.user-block .order {
+  background-color: #63a63e;
 }
 
 .user-block .order:hover {
@@ -127,6 +132,7 @@ a {
 
 .menu-bottom {
   background-color: #f4f7f9;
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
 }
 
 .header-desc {
@@ -156,7 +162,6 @@ a {
 }
 
 .header-entry .profile {
-  color: #000000;
   background-color: #ffffff;
 }
 
@@ -175,7 +180,6 @@ a {
 .personal-area-name {
   font-size: 21px;
   line-height: 30px;
-  color: #000000;
   background-color: #ffffff;
 }
 
@@ -218,6 +222,10 @@ a {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.offers {
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+}
+
 .offers h3 {
   font-size: 24px;
   line-height: 30px;
@@ -225,61 +233,66 @@ a {
   color: #ffffff;
 }
 
-.offers .btn-tile {
+.btn-tile {
   font-size: 14px;
   line-height: 18px;
-  color: #ffffff;
   background-color: rgba(0, 0, 0, 0.1);
   width: 138px;
+}
+
+.btn-tile:hover,
+.btn-tile:active {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .tile {
   width: 300px;
 }
 
-.materials {
+.tile-materials {
   background-color: #ffbf47;
 }
 
-.tool {
+.tile-tool {
   background-color: #3bbce3;
 }
 
-.equipment {
+.tile-equipment {
   background-color: #dc91d8;
 }
 
-.sales {
+.tile-sales {
   background-color: #8ed78f;
 }
 
-.delivery {
+.tile-delivery {
   background-color: #ffc047;
 }
 
-.men-toys h3 {
+.tile-men-toys h3 {
   font-size: 36px;
   line-height: 40px;
   text-transform: uppercase;
 }
 
-.men-toys span {
+.tile-men-toys span {
   font-size: 18px;
   line-height: 24px;
-  font-family: "PT Sans", "Cuprum", sans-serif;
+  font-family: "PT Sans", "Cuprum", "Arial", sans-serif;
   color: #ffffff;
 }
 
-.men-toys .slide-1 {
-  background: url("../img/photo-1.jpg") no-repeat;
+.tile-slide {
   width: 620px;
   height: 270px;
 }
 
-.men-toys .slide-2 {
+.tile-slide-1 {
+  background: url("../img/photo-1.jpg") no-repeat;
+}
+
+.tile-slide-2 {
   background: url("../img/photo-2.jpg") no-repeat;
-  width: 620px;
-  height: 270px;
 }
 
 .popular-header {
@@ -287,16 +300,16 @@ a {
 }
 
 .popular-title {
-font-size: 30px;
-line-height: 36px;
-color: #32425c;
-text-transform: uppercase;
+  font-size: 30px;
+  line-height: 36px;
+  color: #32425c;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .products-list,
 .banners-list {
   list-style: none;
-  font-family: "PT Sans", "Cuprum", sans-serif;
   font-size: 17px;
   line-height: 18px;
 }
@@ -337,7 +350,7 @@ text-transform: uppercase;
 }
 
 .product-actions .actions-btn {
-  font-family: "Cuprum", "PT Sans", sans-serif;
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -394,10 +407,12 @@ text-transform: uppercase;
 
 .services {
   background-color: #f4f8fa;
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
 }
- 
-.services p {
-  font-family: "PT Sans","Cuprum", sans-serif;
+
+.services p,
+.feature p {
+  font-family: "PT Sans", "Cuprum", "Arial", sans-serif;
 }
 
 .services-slider {
@@ -408,6 +423,7 @@ text-transform: uppercase;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .services-choice {
@@ -444,6 +460,7 @@ text-transform: uppercase;
   line-height: 42px;
   color: #32425c;
   text-transform: uppercase;
+  font-weight: 400;
 }
 
 .slide {
@@ -472,14 +489,15 @@ text-transform: uppercase;
   width: 196px;
 }
 
+.feature {
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+}
+
 .feature h2 {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-}
-
-.feature p {
-  font-family: "PT Sans","Cuprum", sans-serif;
+  font-weight: 400;
 }
 
 .about-company-list {
@@ -492,13 +510,9 @@ text-transform: uppercase;
 
 .breadcrumbs {
   list-style: none;
-  font-family: "PT Sans","Cuprum", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
-}
-
-.breadcrumbs a {
   color: #000000;
 }
 
@@ -508,10 +522,10 @@ text-transform: uppercase;
   color: #32425c;
   text-transform: uppercase;
   background-color: #f2f6f8;
+  font-weight: 400;
 }
 
 .filters {
-  font-family: "PT Sans","Cuprum", sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #000000;
@@ -519,6 +533,7 @@ text-transform: uppercase;
 }
 
 .filters-title {
+  font-family: "PT Sans","Cuprum", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   background-color: #f7f3ec;
@@ -545,7 +560,7 @@ fieldset {
 }
 
 .filter-btn {
-  font-family: "PT Sans","Cuprum", sans-serif;
+  font-family: "PT Sans","Cuprum", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -555,7 +570,6 @@ fieldset {
 
 .sorting {
   background-color: #f7f3ec;
-  font-family: "PT Sans","Cuprum", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -563,7 +577,7 @@ fieldset {
 }
 
 .sorting-title {
-  font: inherit;
+ font: inherit;
 }
 
 .sorting-list {
@@ -593,7 +607,6 @@ fieldset {
 
 .paginator-list {
   list-style: none;
-  font-family: "PT Sans","Cuprum", sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
@@ -620,7 +633,6 @@ fieldset {
 }
 
 .about-product-title {
-  font-family: "Cuprum", "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -628,13 +640,14 @@ fieldset {
 }
 
 .about-product-text {
-  font-family: "PT Sans","Cuprum", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
 footer {
   background-color: #32425c;
+  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+
 }
 
 .footer-navigation {
