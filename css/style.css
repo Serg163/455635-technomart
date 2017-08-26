@@ -14,7 +14,11 @@ a {
   color: inherit;
 }
 
-h1, h2, h3 {
+.visually-hidden {
+  display: none;
+}
+
+.title {
   font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
 }
 
@@ -30,6 +34,7 @@ h1, h2, h3 {
   background-color: #ee3643;
   border: none;
   width: 255px;
+  height: 18px;
   border-radius: 3px;
   padding: 10px 0;
   display: inline-block;
@@ -46,6 +51,7 @@ h1, h2, h3 {
 .container {
   width: 940px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .menu-top {
@@ -56,6 +62,10 @@ h1, h2, h3 {
   background-color: #293449;
 }
 
+.menu-top .container {
+  display: flex;
+}
+
 .logo {
   font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
   font-size: 24px;
@@ -64,7 +74,8 @@ h1, h2, h3 {
   text-transform: uppercase;
   background-color: #ee3643;
   box-shadow: 0 5px 0 0 #b52933;
-  padding: 7px 55px;
+  padding: 6px 55px;
+  height: 30px;
   display: inline-block;
 }
 
@@ -103,10 +114,17 @@ h1, h2, h3 {
 
 .user-block {
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .user-block a {
   background-color: #293449;
+  display: inline-block;
+  padding: 12px 30px;
+  padding-left: 45px;
+
 }
 
 .user-block a:hover {
@@ -120,6 +138,7 @@ h1, h2, h3 {
 
 .user-block .order {
   background-color: #63a63e;
+  padding: 12px 25px;
 }
 
 .user-block .order:hover {
@@ -133,6 +152,13 @@ h1, h2, h3 {
 .menu-bottom {
   background-color: #f4f7f9;
   font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  padding-bottom: 63px;
+}
+
+.menu-bottom .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
 }
 
 .header-desc {
@@ -140,6 +166,13 @@ h1, h2, h3 {
   line-height: 23px;
   font-style: italic;
   color: #ee3643;
+  width: 200px;
+  margin-right: 70px;
+}
+
+.header-contacts {
+  width: 270px;
+  margin-right: 70px;
 }
 
 .header-contacts .phone {
@@ -147,6 +180,9 @@ h1, h2, h3 {
   line-height: 30px;
   color: #fb463c;
   border: 3px solid #ffffff;
+  padding: 5px;
+  padding-right: 45px;
+  padding-left: 75px;
 }
 
 .header-contacts .addres {
@@ -163,6 +199,12 @@ h1, h2, h3 {
 
 .header-entry .profile {
   background-color: #ffffff;
+  padding: 8px 25px;
+}
+
+.header-entry .login {
+  padding-left: 50px;
+  margin-right: 10px;
 }
 
 .profile:hover,
@@ -175,6 +217,10 @@ h1, h2, h3 {
 .personal-area-name:active,
 .personal-area-link:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.personal-area {
+  display: none;
 }
 
 .personal-area-name {
@@ -198,11 +244,13 @@ h1, h2, h3 {
   width: 20px;
   height: 17px;
   display: inline-block;
-
 }
 
 .site-navigation {
   list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
@@ -211,6 +259,8 @@ h1, h2, h3 {
   color: #ffffff;
   background-color: #3d546e;
   box-shadow: 0 5px 0 #293449;
+  padding: 18px 30px;
+  display: inline-block;
 }
 
 .site-navigation a:hover {
@@ -224,6 +274,10 @@ h1, h2, h3 {
 
 .offers {
   font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 60px;
 }
 
 .offers h3 {
@@ -231,6 +285,9 @@ h1, h2, h3 {
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
+  padding: 20px;
 }
 
 .btn-tile {
@@ -247,6 +304,8 @@ h1, h2, h3 {
 
 .tile {
   width: 300px;
+  height: 130px;
+  display: inline-block;
 }
 
 .tile-materials {
@@ -267,6 +326,11 @@ h1, h2, h3 {
 
 .tile-delivery {
   background-color: #ffc047;
+}
+
+.tile-men-toys {
+  width: 620px;
+  height: 300px;
 }
 
 .tile-men-toys h3 {
@@ -293,10 +357,15 @@ h1, h2, h3 {
 
 .tile-slide-2 {
   background: url("../img/photo-2.jpg") no-repeat;
+  display: none;
 }
 
 .popular-header {
   background-color: #f9f5f0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .popular-title {
@@ -309,9 +378,14 @@ h1, h2, h3 {
 
 .products-list,
 .banners-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-size: 17px;
   line-height: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .product-item {
@@ -331,6 +405,7 @@ h1, h2, h3 {
   font-weight: 700;
   color: #a9a9a9;
   text-decoration: line-through;
+  display: block;
 }
 
 .product-item .price-btn {
@@ -408,6 +483,14 @@ h1, h2, h3 {
 .services {
   background-color: #f4f8fa;
   font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  padding-top: 55px;
+  padding-bottom: 100px;
+  margin-bottom: 60px;
+}
+
+.services .container {
+  display: flex;
+  flex-direction: column;
 }
 
 .services p,
@@ -428,6 +511,8 @@ h1, h2, h3 {
 
 .services-choice {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .services-choice a {
@@ -493,6 +578,11 @@ h1, h2, h3 {
   font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
 }
 
+.feature .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .feature h2 {
   font-size: 30px;
   line-height: 36px;
@@ -500,20 +590,52 @@ h1, h2, h3 {
   font-weight: 400;
 }
 
+.about-company {
+  width: 550px;
+}
+
 .about-company-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 20px;
 }
 
+.about-company-text {
+  width: 530px;
+}
+
+.about-company-text:nth-of-type(2) {
+  width: 400px;
+}
+
+.contacts {
+  width: 300px;
+  margin-bottom: 85px;
+}
+
 /*Catalog*/
+
+main .container {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .breadcrumbs {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 20px;
+  display: flex;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.breadcrumbs li {
+  padding-left: 20px;
 }
 
 .main-title {
@@ -523,6 +645,8 @@ h1, h2, h3 {
   text-transform: uppercase;
   background-color: #f2f6f8;
   font-weight: 400;
+  display: block;
+  width: 100%;
 }
 
 .filters {
@@ -538,6 +662,7 @@ h1, h2, h3 {
   line-height: 18px;
   background-color: #f7f3ec;
   font-weight: 400;
+  margin-right: 20px;
 }
 
 fieldset {
@@ -574,6 +699,9 @@ fieldset {
   line-height: 18px;
   text-transform: uppercase;
   font-weight: 400;
+  display: flex;
+  width: 700px;
+  height: 28px;
 }
 
 .sorting-title {
@@ -581,7 +709,10 @@ fieldset {
 }
 
 .sorting-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
 
 }
 
@@ -607,8 +738,13 @@ fieldset {
 
 .paginator-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
   font-size: 13px;
   line-height: 18px;
+  display: flex;
+  margin-top: 55px;
+  margin-bottom: 55px;
 }
 
 .paginator-item a {
@@ -630,6 +766,8 @@ fieldset {
 
 .about-product {
   background-color: #f2f6f8;
+  padding-bottom: 70px;
+  padding-top: 50px;
 }
 
 .about-product-title {
@@ -647,30 +785,45 @@ fieldset {
 footer {
   background-color: #32425c;
   font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+}
 
+.footer-top .container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer-navigation {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  margin-left: 160px;
 }
 
 .footer-adress {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
+  margin-bottom: 50px;
+  width: 330px;
 }
 
 .footer-navigation a {
   font-size: 18px;
   line-height: 24px;
+  display: inline-block;
+  margin-top: 30px;
+
 }
 
 .footer-navigation-top a {
   color: #f3f7f9;
+  margin-left: 48px;
 }
 
 .footer-navigation-bottom a {
   color: #ffd180;
+  margin-left: 25px;
 }
 
 .footer-navigation a:hover {
@@ -689,8 +842,28 @@ footer {
   color: #ffffff;
 }
 
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  width: 330px;
+}
+
 .footer-social {
   list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-feedback {
+  width: 140px;
+}
+
+.footer-developer {
+  width: 100px;
 }
 
 .social-btn {
@@ -735,15 +908,26 @@ footer {
 .modal-write-us {
   background-color: #ffffff;
   box-shadow: 0 -7px 0 0 #ee3643, 0 15px 50px 0 rgba(0, 0, 0, 0.7);
+  width: 620px;
+}
+
+.login-form {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .modal-write-us label {
   font-size: 18px;
   line-height: 20px;
+  display: block;
 }
 
 .modal-write-us fieldset {
   border: none;
+}
+
+.modal-write-us .half-width {
+  width: 220px;
 }
 
 .modal-write-us input,
@@ -754,6 +938,11 @@ footer {
   color: #a9a9a9;
   border: 2px solid  #dee3e4;
   border-radius: 3px;
+}
+
+.modal-btn {
+  width: 460px;
+  height: 35px;
 }
 
 .modal-send {
