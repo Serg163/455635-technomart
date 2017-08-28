@@ -160,6 +160,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding-top: 40px;
+  justify-content: space-between;
 }
 
 .header-desc {
@@ -168,12 +169,13 @@ a {
   font-style: italic;
   color: #ee3643;
   width: 200px;
-  margin-right: 70px;
+  padding-left: 50px;
+  margin: 0;
+  margin-bottom: 45px;
 }
 
 .header-contacts {
   width: 270px;
-  margin-right: 70px;
 }
 
 .header-contacts .phone {
@@ -181,9 +183,11 @@ a {
   line-height: 30px;
   color: #fb463c;
   border: 3px solid #ffffff;
+  display: inline-block;
   padding: 5px;
   padding-right: 45px;
   padding-left: 75px;
+  margin-bottom: 5px;
 }
 
 .header-contacts .addres {
@@ -196,6 +200,10 @@ a {
   font-size: 21px;
   line-height: 30px;
   color: #000000;
+}
+
+.inner-page .header-entry {
+  display: none;
 }
 
 .header-entry .profile {
@@ -222,12 +230,24 @@ a {
 
 .personal-area {
   display: none;
+  width: 300px;
+}
+
+.inner-page .personal-area {
+  display: inline-block;
+}
+
+.personal-area a {
+  display: inline-block;
 }
 
 .personal-area-name {
   font-size: 21px;
   line-height: 30px;
   background-color: #ffffff;
+  padding: 7px;
+  padding-left: 45px;
+  padding-right: 65px;
 }
 
 .personal-area-link {
@@ -280,6 +300,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 60px;
+  margin-bottom: 50px;
 }
 
 .offers h3 {
@@ -289,7 +310,6 @@ a {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  padding: 20px;
 }
 
 .btn-tile {
@@ -306,12 +326,18 @@ a {
 
 .tile {
   width: 300px;
-  height: 130px;
+  height: 123px;
   display: inline-block;
+}
+
+.tile-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .tile-materials {
   background-color: #ffbf47;
+  margin-bottom: 20px;
 }
 
 .tile-tool {
@@ -324,6 +350,7 @@ a {
 
 .tile-sales {
   background-color: #8ed78f;
+  margin-bottom: 20px;
 }
 
 .tile-delivery {
@@ -332,7 +359,7 @@ a {
 
 .tile-men-toys {
   width: 620px;
-  height: 300px;
+  height: 266px;
 }
 
 .tile-men-toys h3 {
@@ -363,16 +390,16 @@ a {
 }
 
 .popular {
-  margin-bottom: 65px;
+  argin-bottom: 65px;
 }
 
 .popular-header {
   background-color: #f9f5f0;
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  padding: 0 25px;
   margin-bottom: 20px;
-
+  align-items: center;
 }
 
 .popular-title {
@@ -499,6 +526,7 @@ a {
   padding-top: 55px;
   padding-bottom: 100px;
   margin-bottom: 60px;
+  margin-top: 85px;
 }
 
 .services .container {
@@ -511,10 +539,6 @@ a {
   font-family: "PT Sans", "Cuprum", "Arial", sans-serif;
 }
 
-.services-slider {
-  position: relative
-}
-
 .services-title {
   font-size: 30px;
   line-height: 36px;
@@ -522,10 +546,20 @@ a {
   font-weight: 400;
 }
 
+.services-text {
+  width: 400px;
+  margin-bottom: 70px;
+}
+
+.services-slider {
+  position: relative
+}
+
 .services-choice {
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 240px;
 }
 
 .services-choice a {
@@ -536,8 +570,12 @@ a {
   background-color: #32425c;
   display: inline-block;
   width: 200px;
-  padding: 20px 0;
-  padding-left: 20px;
+  padding: 20px 20px;
+}
+
+.services-choice .slide-transfer {
+  background-color: #ffffff;
+  color: #32425c;
 }
 
 .services-choice a:hover {
@@ -549,29 +587,39 @@ a {
   color: #32425c;
 }
 
-.slide-transfer:focus .services-transfer {
-  display: inline-block;
-}
-
 .slide-title {
   font-size: 36px;
   line-height: 42px;
   color: #32425c;
   text-transform: uppercase;
   font-weight: 400;
+  width: 150px;
+  padding: 0;
+  margin: 0;
+}
+
+.slide-text {
+  width: 280px;
+}
+
+.slide .slide-text:last-child {
+  width: 200px;
 }
 
 .slide {
   background-repeat: no-repeat;
   background-size: 468px 261px;
+  background-position: 150px 0;
   position: absolute;
   top: 0;
   right: 0;
   display: none;
+  width: 620px;
 }
 
 .services-transfer {
   background-image: url(../img/bg-transfer.png);
+  display: inline-block;
 }
 
 .services-garantie {
@@ -613,10 +661,17 @@ a {
   padding: 0;
   font-size: 18px;
   line-height: 20px;
+  margin-bottom: 35px;
+}
+
+.about-company-list li {
+  margin-bottom: 15px;
+  margin-left: 35px;
 }
 
 .about-company-text {
   width: 530px;
+  margin-bottom: 30px;
 }
 
 .about-company-text:nth-of-type(2) {
@@ -628,12 +683,19 @@ a {
   margin-bottom: 85px;
 }
 
-/*Catalog*/
-
-main .container {
-  display: flex;
-  flex-wrap: wrap;
+.contacts-text {
+  width: 200px;
+  margin-bottom: 30px;
 }
+
+.contacts-map {
+  width: 300;
+  height: 158;
+  margin-bottom: 35px;
+  display: block;
+}
+
+/*Catalog*/
 
 .breadcrumbs {
   list-style: none;
@@ -826,6 +888,10 @@ footer {
 .footer-top .container {
   display: flex;
   flex-wrap: wrap;
+}
+
+.logo-footer {
+  padding: 17px 55px;
 }
 
 .footer-navigation {
