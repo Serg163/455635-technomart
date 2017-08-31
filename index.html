@@ -13,16 +13,21 @@
       <div class="menu-top">
         <div class="container">
           <span class="logo logo-header">Техномарт</span>
-          <form class="header-search" action="#" method="post"> 
-            <label for="search" class="visually-hidden">Поиск</label>                      
-            <input type="text" name="search" id="search" placeholder="Поиск:">             
+          <form class="header-search" action="#" method="post">    
+            <label for="search" class="visually-hidden">Поиск</label>                    
+            <input type="text" name="search" id="search" class="menu-top-search" placeholder="Поиск:">   
+            <svg class="icon search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path class="search-icon-path" fill="#ffffff" fill-opacity="0.3" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>           
           </form>
           <ul class="user-block">
             <li>
-              <a href="#" class="bookmarks">Закладки: 0</a>
+              <a href="#" class="user-icon bookmarks">Закладки: 0
+                <svg class="icon menu-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16"><path class="menu-icon-path" fill="#ffffff" fill-opacity="0.3" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
+              </a>
             </li>
             <li>
-              <a href="#" class="basket">Корзина: 0</a>
+              <a href="#" class="user-icon basket">Корзина: 0
+                <svg class="icon menu-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle class="menu-icon-path" fill="#ffffff" fill-opacity="0.3" cx="4.5" cy="13.5" r="1.5"/><circle class="menu-icon-path" fill="#ffffff" fill-opacity="0.3" cx="12.5" cy="13.5" r="1.5"/><path class="menu-icon-path" fill="#ffffff" fill-opacity="0.3" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+              </a>
             </li>
             <li>
               <a href="#" class="order">Оформить заказ</a>
@@ -36,18 +41,24 @@
             и инструментов для ремонта
           </p>
           <div class="header-contacts">
-            <span class="phone">+7 (812) 555-05-55</span>               
+            <span class="phone">+7 (812) 555-05-55</span> 
             <span class="addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
           </div>
           <div class="header-entry">
-            <a class="profile login" href="#">Войти</a>
+            <a class="profile login" href="#">Войти
+              <svg class="icon entry-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17"><path class="entry-icon-path" fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/><path class="entry-icon-path" fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/></svg>
+            </a>
             <a class="profile registration" href="#">Регистрация</a>
           </div>
           <div class="personal-area visually-hidden">
-            <a class="personal-area-name" href="#">Равшан Джамшутович</a>
-            <a class="personal-area-logout" href="#">Выход</a>
-            <a class="personal-area-link" href="#">Мои заказы</a>
-            <a class="personal-area-link" href="#">Личный кабинет</a>
+            <a class="personal-area-name" href="#">Равшан Джамшутович
+              <svg class="icon entry-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path class="entry-icon-path" fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+            </a>
+            <a class="personal-area-logout" href="#">Выход
+              <svg class="entry-icon-logout" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><g fill="#c5c5c5"><path class="entry-icon-path" fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path class="entry-icon-path" fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+            </a>
+            <a class="personal-area-link link-ordens" href="#">Мои заказы</a>
+            <a class="personal-area-link link-personal" href="#">Личный кабинет</a>
           </div>
           <nav class="main-nav">
             <ul class="site-navigation">
@@ -70,7 +81,7 @@
           <section class="offers">
             <h2 class="visually-hidden">Предложения</h2>
             <div class="tile-column-row">
-              <div class="tile tile-materials">
+              <div class="tile tile-materials flag-new">
                 <h3 class="title">Материалы</h3>
                 <a href="#" class="btn btn-tile">На любой вкус</a>
               </div>
@@ -78,7 +89,7 @@
                 <h3 class="title">Инструмент</h3> 
                 <a href="#" class="btn btn-tile">На все случаи</a>
               </div>
-              <div class="tile tile-men-toys">
+              <div class="tile-men-toys">
                 <div class="tile-slider">  
                   <div class="tile-slider-controls visually-hidden">              
                     <input type="radio" name="toggle" id="btn-1" checked>
@@ -122,7 +133,9 @@
             <ul class="products-list"> 
               <li class="product-item">
                 <div class="product-actions">
-                  <a href="#" class="btn actions-btn buy-btn">Купить</a>   
+                  <a href="#" class="btn actions-btn buy-btn">Купить
+                    <svg class="icon buy-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" cx="4.5" cy="13.5" r="1.5"/><circle class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" cx="12.5" cy="13.5" r="1.5"/><path class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                  </a>
                   <a href="#" class="btn actions-btn bookmark-btn">В закладки</a>
                 </div>
                 <div class="product-image">
@@ -134,7 +147,9 @@
               </li>
               <li class="product-item">
                 <div class="product-actions">
-                  <a href="#" class="btn actions-btn buy-btn">Купить</a>   
+                  <a href="#" class="btn actions-btn buy-btn">Купить
+                    <svg class="icon buy-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" cx="4.5" cy="13.5" r="1.5"/><circle class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" cx="12.5" cy="13.5" r="1.5"/><path class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>  
+                  </a>
                   <a href="#" class="btn actions-btn bookmark-btn">В закладки</a>
                 </div>
                 <div class="product-image">
@@ -146,7 +161,9 @@
               </li>
               <li class="product-item">
                 <div class="product-actions">
-                  <a href="#" class="btn actions-btn buy-btn">Купить</a>   
+                  <a href="#" class="btn actions-btn buy-btn">Купить  
+                    <svg class="icon buy-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" cx="4.5" cy="13.5" r="1.5"/><circle class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" cx="12.5" cy="13.5" r="1.5"/><path class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                  </a>
                   <a href="#" class="btn actions-btn bookmark-btn">В закладки</a>
                 </div>
                 <div class="product-image">
@@ -158,7 +175,9 @@
               </li> 
               <li class="product-item flag-new">
                 <div class="product-actions">
-                  <a href="#" class="btn actions-btn buy-btn">Купить</a>   
+                  <a href="#" class="btn actions-btn buy-btn">Купить   
+                    <svg class="icon buy-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" cx="4.5" cy="13.5" r="1.5"/><circle class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" cx="12.5" cy="13.5" r="1.5"/><path class="buy-icon-path" fill="#ffffff" fill-opacity="0.3" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>
+                  </a>
                   <a href="#" class="btn actions-btn bookmark-btn">В закладки</a>
                 </div>
                 <div class="product-image">
@@ -274,7 +293,7 @@
               Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.
             </p>
             <p class="about-company-text">
-              Мы можем доставить ваш товар в самые отдаленные точки России!
+              Мы можем доставить ваш товар в самые отдаленные точки России!<br>
               Техномарт работает со многими транспортными компаниями: 
             </p>
             <ul class="about-company-list">
@@ -351,21 +370,23 @@
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <button class="modal-content-close" type="button" title="close">Закрыть</button>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">        
-        <fieldset class="half-width">
-          <label for="name">Ваше имя:</label>
-          <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
-        </fieldset>
-        <fieldset class="half-width">
-          <label for="mail">Ваш e-mail:</label>
-          <input type="text" name="mail" id="mail" placeholder="Для отправки ответа">
-        </fieldset>
-        <fieldset class="modal-textarea">
-          <label for="text">Текст письма:</label>
-          <textarea name="text" id="text" cols="60" rows="6">  
-          В свободной форме  
-          </textarea>   
-        </fieldset>    
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">  
+        <div class="modal-container">     
+          <fieldset class="half-width">
+            <label for="name">Ваше имя:</label>
+            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+          </fieldset>
+          <fieldset class="half-width">
+            <label for="mail">Ваш e-mail:</label>
+            <input type="text" name="mail" id="mail" placeholder="Для отправки ответа">
+          </fieldset>
+          <fieldset class="modal-textarea">
+            <label for="text">Текст письма:</label>
+            <textarea name="text" id="text" cols="" rows="6">  
+            В свободной форме  
+            </textarea>   
+          </fieldset> 
+        </div>   
         <div class="modal-send">
           <button type="submit" class="btn modal-btn" name="send">Отправить</button>
         </div>
