@@ -52,6 +52,7 @@ img {
   border-radius: 3px;
   padding: 10px 0;
   display: inline-block;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -594,7 +595,7 @@ img {
 
 .tile-slide-2 {
   background: url("../img/photo-2.jpg") no-repeat 0 0; 
-  
+
 }
 
 .popular-header {
@@ -1552,16 +1553,20 @@ footer {
   text-decoration: none;
 }
 
-.modal-write-us {
+.modal {
   background-color: #ffffff;
   box-shadow: 0 -7px 0 0 #ee3643, 0 15px 50px 0 rgba(0, 0, 0, 0.7);
   width: 620px;
-  position: fixed;
-  bottom: 20%;
-  left: 50%;
+  position: absolute; 
   margin-left: -310px;
   z-index: 5;
   display: none;
+}
+
+.modal-write-us {
+  display: none;
+  bottom: -370%;
+  left: 50%;
 }
 
 .modal-container {
@@ -1646,14 +1651,54 @@ footer {
 }
 
 .modal-map {
+  display: none;
   width: 940px;
   height: 450px;
   background: url(../img/map-big.jpg) no-repeat 0 0;
-  display: none;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  position: fixed;
-  bottom: 20%;
+  position: absolute;
+  bottom: -350%;
   left: 50%;
   margin-left: -470px;
   z-index: 5;
+}
+
+.modal-cart {
+  display: none;
+  bottom: -7%;
+  left: 50%;
+  background: url(../img/form-1.svg) no-repeat 80px 50px;
+  background-color: #ffffff;
+}
+
+.modal-cart h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  margin: 64px 0;
+  padding-left: 178px;
+}
+
+.orden-btn {
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20px;
+  margin-left: 80px;
+}
+
+.continue-btn {
+  width: 220px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.continue-btn:hover {
+  background-color: #e4ecf9;
+}
+
+.continue-btn:active {
+  background-color: #c0cbdd;
 }
