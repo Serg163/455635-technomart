@@ -378,18 +378,16 @@
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">  
         <div class="modal-container">     
           <fieldset class="half-width">
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="name" id="name" placeholder="Представьтесь, пожалуйста">
+            <label for="login">Ваше имя:</label>
+            <input type="text" name="login" id="login" placeholder="Представьтесь, пожалуйста" required>
           </fieldset>
           <fieldset class="half-width">
             <label for="mail">Ваш e-mail:</label>
-            <input type="text" name="mail" id="mail" placeholder="Для отправки ответа">
+            <input type="text" name="mail" id="mail" placeholder="Для отправки ответа" required>
           </fieldset>
           <fieldset class="modal-textarea">
             <label for="text">Текст письма:</label>
-            <textarea name="text" id="text" cols="" rows="6">  
-            В свободной форме  
-            </textarea>   
+            <textarea name="text" id="text" cols="7" rows="6" required>В свободной форме</textarea>                         
           </fieldset> 
         </div>   
         <div class="modal-send">
@@ -400,7 +398,17 @@
     <section class="modal-map">
       <h2 class="visually-hidden">Как найти наш офис</h2>
       <button class="modal-content-close" type="button" title="close">Закрыть</button>
-      <div id="yandex-map"></div>
+      <div id="google-map"></div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.6157973555908!2d30.321932397407604!3d59.93877494414224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sit!4v1504605727170" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
     </section>
+    <section class="modal modal-cart">
+      <button class="modal-content-close" type="button" title="close">Закрыть</button>
+      <h2 class="title">Товар добавлен в корзину!</h2>       
+      <div class="modal-send">
+        <button type="submit" class="btn modal-btn orden-btn" name="orden">Оформить заказ</button>
+        <button type="submit" class="btn modal-btn continue-btn" name="continue">Продолжить покупки</button>
+      </div>
+    </section>
+    <script src="js/popup.js"></script>
   </body>
 </html>
