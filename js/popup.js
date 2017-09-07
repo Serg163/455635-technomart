@@ -1,69 +1,71 @@
 var mapOpen = document.querySelector(".contacts-map");
 var mapPopup = document.querySelector(".modal-map");
-var mapClose = mapPopup.querySelector(".modal-content-close");
+  if (mapPopup) {
+    var mapClose = mapPopup.querySelector(".modal-content-close");
 
-mapOpen.addEventListener("click", function(event) {
-	event.preventDefault();
-	mapPopup.classList.add("modal-content-show");
-}); 
-
-mapClose.addEventListener("click", function(event) {
-	event.preventDefault();
-	mapPopup.classList.remove("modal-content-show");
-}); 
-
+    mapOpen.addEventListener("click", function(event) {
+      event.preventDefault();
+      mapPopup.classList.add("modal-content-show");
+    }); 
+    mapClose.addEventListener("click", function(event) {
+      event.preventDefault();
+      mapPopup.classList.remove("modal-content-show");
+    }); 
+  }
 
 var writeUsOpen = document.querySelector(".btn-contacts");
 var writeUsPopup = document.querySelector(".modal-write-us");
-var writeUsClose = writeUsPopup.querySelector(".modal-content-close");
-var writeUsLogin = writeUsPopup.querySelector("[name=login]");
-var writeUsMail = writeUsPopup.querySelector("[name=mail]");
-var writeUsText = writeUsPopup.querySelector("[name=text]");
-var writeUsForm = writeUsPopup.querySelector("form");
+  if (writeUsPopup) {
+    var writeUsClose = writeUsPopup.querySelector(".modal-content-close");
+    var writeUsLogin = writeUsPopup.querySelector("[name=login]");
+    var writeUsMail = writeUsPopup.querySelector("[name=mail]");
+    var writeUsText = writeUsPopup.querySelector("[name=text]");
+    var writeUsForm = writeUsPopup.querySelector("form");
 
-writeUsOpen.addEventListener("click", function(event) {
-  event.preventDefault();
-  writeUsPopup.classList.add("modal-content-show");
-  writeUsLogin.focus();
-});
+    writeUsOpen.addEventListener("click", function(event) {
+      event.preventDefault();
+      writeUsPopup.classList.add("modal-content-show");
+      writeUsLogin.focus();
+    });
 
-writeUsClose.addEventListener("click", function(event) {
-	event.preventDefault();
-	writeUsPopup.classList.remove("modal-content-show");
-}); 
+    writeUsClose.addEventListener("click", function(event) {
+    	event.preventDefault();
+    	writeUsPopup.classList.remove("modal-content-show");
+    }); 
 
-writeUsForm.addEventListener("submit", function(event) {
-  event.preventDefault();
-  console.log("Отправляем форму");
-});
-/*
-writeUsForm.addEventListener("submit", function(event) {
-  event.preventDefault();
-  console.log("writeUsLogin.value");
-  console.log("writeUsMail.value");
-  console.log("writeUsText.value");
-});
+    writeUsForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      console.log("Отправляем форму");
+    });
 
-writeUsForm.addEventListener("submit, function(event) {
- if ( !writeUsLogin.value || !writeUsMail.value || !writeUsText.value) {
-	event.preventDefault();
-	console.log("Нужно заполнить поля");
- }
-});*/
+    writeUsForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      console.log("writeUsLogin.value");
+      console.log("writeUsMail.value");
+      console.log("writeUsText.value");
+    });
 
-
+    writeUsForm.addEventListener("submit", function(event) {
+      if (!writeUsLogin.value || !writeUsMail.value || !writeUsText.value) {
+         event.preventDefault();
+         alert("Нужно заполнить поля");
+      }
+    });
+  }
 
 var modalCartOpen = document.querySelectorAll(".product-item .buy-btn");
 var modalCartPopup = document.querySelector(".modal-cart");
-var modalCartClose = modalCartPopup.querySelector(".modal-content-close");
+  if (modalCartPopup) {
+    var modalCartClose = modalCartPopup.querySelector(".modal-content-close");
 
-modalCartOpen.addEventListener("click", function(event) {
-	event.preventDefault();
-	modalCartPopup.classList.add("modal-content-show");
-});
-
-modalCartClose.addEventListener("click", function(event) {
-	event.preventDefault();
-	modalCartPopup.classList.remove("modal-content-show");
-}); 
-
+    for (var i = 0; i < modalCartOpen.length; i++) {
+      modalCartOpen[i].addEventListener("click", function(event) {
+        event.preventDefault();
+        modalCartPopup.classList.add("modal-content-show");
+      });
+    }
+    modalCartClose.addEventListener("click", function(event) {
+    	event.preventDefault();
+    	modalCartPopup.classList.remove("modal-content-show");
+    }); 
+  }

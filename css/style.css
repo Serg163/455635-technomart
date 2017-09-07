@@ -569,6 +569,7 @@ img {
   height: 266px;
   margin-top: 20px;
   position: relative;
+  background-color: #928479;
 }
 
 .tile-men-toys h3 {
@@ -1801,6 +1802,7 @@ footer {
   padding: 0;
   margin-bottom: 20px;
   display: inline-block;
+  vertical-align: top;
 }
 
 .modal-write-us .half-width:first-child {
