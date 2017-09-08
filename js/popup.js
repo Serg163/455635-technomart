@@ -40,8 +40,6 @@ var writeUsPopup = document.querySelector(".modal-write-us");
 
     writeUsForm.addEventListener("submit", function(event) {
       event.preventDefault();
-      console.log("writeUsLogin.value");
-      console.log("writeUsMail.value");
       console.log("writeUsText.value");
     });
 
