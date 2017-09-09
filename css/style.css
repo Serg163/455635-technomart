@@ -243,7 +243,7 @@ img {
 .menu-bottom {
   background-color: #f4f7f9;
   font-family: "Cuprum", "Arial", sans-serif;
-  padding-bottom: 77px;
+  padding-bottom: 65px;
 }
 
 .menu-bottom .container {
@@ -264,7 +264,7 @@ img {
   padding-left: 53px;
   margin: 0;
   margin-right: 67px;
-  margin-bottom: 59px;
+  margin-bottom: 40px;
 }
 
 .header-contacts {
@@ -434,9 +434,11 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 940px;
+  max-width: 940px;
 }
 
 .site-navigation a {
@@ -446,18 +448,19 @@ img {
   background-color: #3d546e;
   -webkit-box-shadow: 0 5px 0 #293449;
   box-shadow: 0 5px 0 #293449;
-  padding: 17px 31px;
+  padding: 16px 30px;
   padding-top: 19px;
   vertical-align: top;
+  display: inline-block;
 }
 
 .site-navigation li:first-child a {
-  padding-left: 52px;
+  padding-left: 54px;
 }
 
 .site-navigation li:last-child a {
-  padding-right: 52px;
-  padding-left: 29px;
+  padding-right: 54px;
+  padding-left: 34px;
 }
 
 .site-navigation a:hover {
@@ -1051,6 +1054,11 @@ img {
   background-image: url(../img/bg-guarantee.png);
   background-size: 389px 283px;
   background-position: 238px 6px;
+}
+
+.services-garantie .slide-text {
+  width: 375px;
+  padding-right: 25px;
 }
 
 .services-credit {
@@ -1752,8 +1760,7 @@ img {
   background-color: #ffffff;
   -webkit-box-shadow: 0 -7px 0 0 #ee3643, 0 15px 50px 0 rgba(0, 0, 0, 0.7);
   box-shadow: 0 -7px 0 0 #ee3643, 0 15px 50px 0 rgba(0, 0, 0, 0.7);
-  width: 620px;
-  position: absolute; 
+  width: 620px; 
   margin-left: -310px;
   z-index: 5;
   display: none;
@@ -1761,8 +1768,9 @@ img {
 
 .modal-write-us {
   display: none;
-  bottom: -360%;
+  bottom: 20%;
   left: 50%;
+  position: fixed;
 }
 
 .modal-container {
@@ -1854,11 +1862,15 @@ img {
   background: url(../img/map-big.jpg) no-repeat 0 0;
   -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: -350%;
+  bottom: 20%;
   left: 50%;
+  position: fixed;
   margin-left: -470px;
   z-index: 5;
+}
+
+.modal-map iframe {
+  border: none;
 }
 
 .modal-cart {
