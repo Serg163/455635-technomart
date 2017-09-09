@@ -1250,7 +1250,9 @@ img {
   width: 201px;
 }
 
-.filter fieldset {
+.filter-price,
+.filter-producers,
+.filter-battery {
   border: none;
   margin: 0;
   padding: 0;
