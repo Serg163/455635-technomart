@@ -1,47 +1,46 @@
 var mapOpen = document.querySelector(".contacts-map");
 var mapPopup = document.querySelector(".modal-map");
-  if (mapPopup) {
-    var mapClose = mapPopup.querySelector(".modal-content-close");
+if (mapPopup) {
+  var mapClose = mapPopup.querySelector(".modal-content-close");
 
-    mapOpen.addEventListener("click", function(event) {
-      event.preventDefault();
-      mapPopup.classList.add("modal-content-show");
-    }); 
-    mapClose.addEventListener("click", function(event) {
-      event.preventDefault();
-      mapPopup.classList.remove("modal-content-show");
-    }); 
-  }
+  mapOpen.addEventListener("click", function(event) {
+    event.preventDefault();
+    mapPopup.classList.add("modal-content-show");
+  }); 
+  mapClose.addEventListener("click", function(event) {
+    event.preventDefault();
+    mapPopup.classList.remove("modal-content-show");
+  }); 
+}
 
 var writeUsOpen = document.querySelector(".btn-contacts");
 var writeUsPopup = document.querySelector(".modal-write-us");
-  if (writeUsPopup) {
-    var writeUsClose = writeUsPopup.querySelector(".modal-content-close");
-    var writeUsLogin = writeUsPopup.querySelector("[name=login]");
-    var writeUsMail = writeUsPopup.querySelector("[name=mail]");
-    var writeUsText = writeUsPopup.querySelector("[name=text]");
-    var writeUsForm = writeUsPopup.querySelector("form");
+if (writeUsPopup) {
+  var writeUsClose = writeUsPopup.querySelector(".modal-content-close");
+  var writeUsLogin = writeUsPopup.querySelector("[name=login]");
+  var writeUsMail = writeUsPopup.querySelector("[name=mail]");
+  var writeUsText = writeUsPopup.querySelector("[name=text]");
+  var writeUsForm = writeUsPopup.querySelector("form");
 
-    writeUsOpen.addEventListener("click", function(event) {
-      event.preventDefault();
-      writeUsPopup.classList.add("modal-content-show");
-      writeUsLogin.focus();
-    });
+  writeUsOpen.addEventListener("click", function(event) {
+    event.preventDefault();
+    writeUsPopup.classList.add("modal-content-show");
+    writeUsLogin.focus();
+  });
 
-    writeUsClose.addEventListener("click", function(event) {
-    	event.preventDefault();
-    	writeUsPopup.classList.remove("modal-content-show");
-    }); 
+  writeUsClose.addEventListener("click", function(event) {
+  	event.preventDefault();
+  	writeUsPopup.classList.remove("modal-content-show");
+  }); 
 
-    writeUsForm.addEventListener("submit", function(event) {
-      event.preventDefault();
-      console.log("writeUsLogin.value");
-      console.log("writeUsMail.value");
-      console.log("writeUsText.value");
-      if (!writeUsLogin.value || !writeUsMail.value || !writeUsText.value) {
+  writeUsForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+    console.log("writeUsLogin.value");
+    console.log("writeUsMail.value");
+    console.log("writeUsText.value");
+    if (!writeUsLogin.value || !writeUsMail.value || !writeUsText.value) {
          alert("Нужно заполнить поля");
-      } 
-      else { console.log("Отправляем форму");
+    } else { console.log("Отправляем форму");
       }
     });
   }

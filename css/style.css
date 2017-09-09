@@ -5,7 +5,7 @@ body {
   line-height: 24px;
   color: #000000;
   font-weight: 400;
-  font-family: "PT Sans", "Cuprum", "Arial",  sans-serif;
+  font-family: "PT Sans", "Arial",  sans-serif;
 }
 
 a {
@@ -28,19 +28,19 @@ img {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
 .title {
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .btn {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
@@ -72,7 +72,7 @@ img {
 .menu-top {
   font-size: 17px;
   line-height: 18px;
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #ffffff;
   background-color: #293449;
 }
@@ -84,14 +84,14 @@ img {
 }
 
 .logo {
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #ee3643;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
-          box-shadow: 0 5px 0 0 #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
   padding-right: 55px;
   padding-left: 56px;
   padding-top: 7px;
@@ -103,13 +103,13 @@ img {
 .logo:hover {
   background-color: #ca2c37;
   -webkit-box-shadow: 0 5px 0 0 #b52933;
-          box-shadow: 0 5px 0 0 #b52933;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
 .logo:active {
   background-color: #ba2732;
   -webkit-box-shadow: 0 5px 0 0 #8e1e26;
-          box-shadow: 0 5px 0 0 #8e1e26;
+  box-shadow: 0 5px 0 0 #8e1e26;
 }
 
 .header-search {
@@ -242,7 +242,7 @@ img {
 
 .menu-bottom {
   background-color: #f4f7f9;
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   padding-bottom: 77px;
 }
 
@@ -251,7 +251,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-top: 49px;
 }
 
@@ -445,7 +445,7 @@ img {
   color: #ffffff;
   background-color: #3d546e;
   -webkit-box-shadow: 0 5px 0 #293449;
-          box-shadow: 0 5px 0 #293449;
+  box-shadow: 0 5px 0 #293449;
   padding: 17px 31px;
   padding-top: 19px;
   vertical-align: top;
@@ -470,7 +470,7 @@ img {
 }
 
 .offers {
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,7 +489,7 @@ img {
 
 .tile {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 300px;
   position: relative;
   padding-top: 21px;
@@ -527,14 +527,14 @@ img {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-right: 20px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .tile-materials {
@@ -589,7 +589,7 @@ img {
 .tile-men-toys span {
   font-size: 18px;
   line-height: 24px;
-  font-family: "PT Sans", "Cuprum", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   color: #ffffff;
 }
 
@@ -673,8 +673,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 25px;
   padding-bottom: 26px;
   padding-left: 28px;
@@ -709,10 +709,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 
 .product-item {
@@ -739,7 +739,7 @@ img {
 
 .product-item:hover {
   -webkit-box-shadow: 0 0 25px 0 rgba(41, 52, 73, 0.5);
-          box-shadow: 0 0 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 0 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .flag-new::after {
@@ -808,7 +808,7 @@ img {
 }
 
 .product-actions .actions-btn {
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
@@ -900,18 +900,18 @@ img {
 
 .banners-list a:hover {
   -webkit-box-shadow: 0 0 25px 0 rgba(41, 52, 73, 0.5);
-          box-shadow: 0 0 25px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 0 25px 0 rgba(41, 52, 73, 0.5);
 }
 
 .banners-list a:active {
   -webkit-box-shadow: 0 0 10px 0 rgba(41, 52, 73, 0.5);
-          box-shadow: 0 0 10px 0 rgba(41, 52, 73, 0.5);
+  box-shadow: 0 0 10px 0 rgba(41, 52, 73, 0.5);
   opacity: 0.3;
 }
 
 .services {
   background-color: #f4f8fa;
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   padding-top: 62px;
   padding-bottom: 101px;
   margin-bottom: 50px;
@@ -923,13 +923,13 @@ img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .services p,
 .feature p {
-  font-family: "PT Sans", "Cuprum", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .services-title {
@@ -1066,7 +1066,7 @@ img {
 }
 
 .feature {
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   margin-bottom: 86px;
 }
 
@@ -1075,8 +1075,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .feature h2 {
@@ -1222,10 +1222,10 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .filters {
@@ -1237,7 +1237,7 @@ img {
 }
 
 .filters-title {
-  font-family: "PT Sans","Cuprum", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   background-color: #f7f3ec;
@@ -1250,7 +1250,7 @@ img {
   width: 201px;
 }
 
-fieldset {
+.filter fieldset {
   border: none;
   margin: 0;
   padding: 0;
@@ -1421,7 +1421,7 @@ fieldset {
 }
 
 .filter-btn {
-  font-family: "PT Sans","Cuprum", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -1580,9 +1580,9 @@ fieldset {
   margin: 0;
 }
 
-footer {
+.main-footer {
   background-color: #32425c;
-  font-family: "Cuprum", "PT Sans", "Arial", sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
 }
 
 .footer-top {
@@ -1594,7 +1594,7 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .logo-footer {
@@ -1624,8 +1624,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-left: auto;
 }
 
@@ -1749,7 +1749,7 @@ footer {
 .modal {
   background-color: #ffffff;
   -webkit-box-shadow: 0 -7px 0 0 #ee3643, 0 15px 50px 0 rgba(0, 0, 0, 0.7);
-          box-shadow: 0 -7px 0 0 #ee3643, 0 15px 50px 0 rgba(0, 0, 0, 0.7);
+  box-shadow: 0 -7px 0 0 #ee3643, 0 15px 50px 0 rgba(0, 0, 0, 0.7);
   width: 620px;
   position: absolute; 
   margin-left: -310px;
@@ -1810,7 +1810,7 @@ footer {
 
 .modal-write-us input,
 .modal-write-us textarea {
-  font-family: "PT Sans","Cuprum", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
@@ -1851,7 +1851,7 @@ footer {
   height: 450px;
   background: url(../img/map-big.jpg) no-repeat 0 0;
   -webkit-box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: -350%;
   left: 50%;
@@ -1903,7 +1903,7 @@ footer {
 .modal-content-show {
   display: block;
   -webkit-animation: bounce 0.8s;
-          animation: bounce 0.8s;
+  animation: bounce 0.8s;
 }
 
 @-webkit-keyframes bounce {
