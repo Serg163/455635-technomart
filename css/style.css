@@ -243,7 +243,7 @@ img {
 .menu-bottom {
   background-color: #f4f7f9;
   font-family: "Cuprum", "Arial", sans-serif;
-  padding-bottom: 65px;
+  padding-bottom: 60px;
 }
 
 .menu-bottom .container {
@@ -268,7 +268,7 @@ img {
 }
 
 .header-contacts {
-  width: 270px;
+  width: 271px;
 }
 
 .header-contacts .phone {
@@ -294,7 +294,7 @@ img {
 }
 
 .header-entry {
-  width: 350px;
+  width: 349px;
   text-align: right;
   font-size: 21px;
   line-height: 30px;
@@ -433,8 +433,10 @@ img {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -446,8 +448,7 @@ img {
   line-height: 20px;
   color: #ffffff;
   background-color: #3d546e;
-  -webkit-box-shadow: 0 5px 0 #293449;
-  box-shadow: 0 5px 0 #293449;
+  border-bottom: 5px solid #293449;
   padding: 16px 30px;
   padding-top: 19px;
   vertical-align: top;
@@ -459,8 +460,8 @@ img {
 }
 
 .site-navigation li:last-child a {
-  padding-right: 54px;
-  padding-left: 34px;
+  padding-right: 53px;
+  padding-left: 33px;
 }
 
 .site-navigation a:hover {
@@ -1001,11 +1002,6 @@ img {
   display: none;
 }
 
-.services-choice .slide-transfer {
-  background-color: #ffffff;
-  color: #32425c;
-}
-
 .services-choice a:hover {
   background-color: #293449;
 }
@@ -1013,6 +1009,16 @@ img {
 .services-choice a:focus {
   background-color: #ffffff;
   color: #32425c;
+}
+
+.services-choice .slide-transfer {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.services-choice .slide-transfer:hover {
+  background-color: #ffffff;
+  cursor: default;
 }
 
 .slide-title {
@@ -1163,7 +1169,8 @@ img {
 
 .btn-contacts {
   padding-left: 64px;
-  padding-right: 59px;
+  padding-right: 58px;
+  width: 178px;
 }
 
 /*Catalog*/
@@ -1318,6 +1325,7 @@ img {
 
 .price-controls {
   position: relative;
+  white-space: nowrap
 }
 
 .price-controls::after {
@@ -1339,11 +1347,12 @@ img {
   font-size: 17px;
   line-height: 20px;
   border: none;
-  text-align: center;
+  text-align: top;
+  display: inline-block;
 }
 
 .price-controls .min-price {
-  margin-right: 26px;
+  margin-right: 25px;
 }
 
 .filter-producers {
@@ -1476,6 +1485,9 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin-right: 45px;
+  width: 400px;
+  background-color: yellow;
+  justify-content: flex-end;
 }
 
 .sorting-list a {
@@ -1497,8 +1509,7 @@ img {
 .icon-direction {
   font-size: 0;
   display: inline-block;
-  width: 15px;
-  height: 15px;
+  width: 20px;
   vertical-align: top;
   position: relative;
 }
