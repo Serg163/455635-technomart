@@ -452,7 +452,7 @@ img {
   padding: 16px 30px;
   padding-top: 19px;
   vertical-align: top;
-  display: inline-block;
+  display: block;
 }
 
 .site-navigation li:first-child a {
@@ -1347,7 +1347,8 @@ img {
   font-size: 17px;
   line-height: 20px;
   border: none;
-  text-align: top;
+  text-align: center;
+  vertical-align: top;
   display: inline-block;
 }
 
@@ -1395,39 +1396,42 @@ img {
   padding-left: 35px;
 }
 
-.producers-icon {
-  position: absolute;
+.filter label::before {
+  content: "";
+  position: absolute; 
   top: -1px;
   left: 0;
+}
+
+.producers label::before {
   width: 28px;
   height: 23px;
   background: url(../img/checkbox-off.svg) no-repeat 0 0;
 }
 
-.battery-icon {
-  position: absolute;
+.battery label::before {
   top: -3px;
   left: 0;
   width: 25px;
   height: 25px;
   background: url(../img/radio-off.svg) no-repeat 0 0;
-}
+} 
 
-.input-producers:checked + .producers-icon {
+.input-producers:checked + label::before {
   background: url(../img/checkbox-on.svg) no-repeat 0 0;
 }
 
-.input-battery:checked + .battery-icon {
+.input-battery:checked + label::before {
   background: url(../img/radio-on.svg) no-repeat 0 0;
 }
 
-.input-producers:hover + .producers-icon,
-.input-battery:hover + .battery-icon {
+.input-producers:hover + label::before,
+.input-battery:hover + label::before {
   opacity: 0.8;
 }
 
-.input-producers:disabled + .producers-icon,
-.input-battery:disabled + .producers-icon {
+.input-producers:disabled + label::before,
+.input-battery:disabled + label::before {
   fill-opacity: 0.3;
 }
 
@@ -1486,6 +1490,8 @@ img {
   display: flex;
   margin-right: 45px;
   width: 400px;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
