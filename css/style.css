@@ -1474,7 +1474,7 @@ img {
   margin: 0;
   padding: 0;
   font: inherit;
-  margin-right: 72px;
+  margin-right: 93px;
 }
 
 .sorting-list {
@@ -1486,14 +1486,21 @@ img {
   display: flex;
   margin-right: 45px;
   width: 400px;
-  background-color: yellow;
   justify-content: flex-end;
 }
 
 .sorting-list a {
   opacity: 0.3;
   border-bottom: 1px dotted red;
+  display: block;
+}
+
+.sorting-list li {
   margin-left: 68px;
+}
+
+.sorting-list li:first-child {
+  margin-left: 0;
 }
 
 .sorting-list a:hover {
@@ -1506,10 +1513,13 @@ img {
   border-bottom: none;
 } 
 
+.sorting-direction {
+  width: 50px;
+}
+
 .icon-direction {
   font-size: 0;
   display: inline-block;
-  width: 20px;
   vertical-align: top;
   position: relative;
 }
@@ -1523,7 +1533,7 @@ img {
 }
 
 .sorting-direction .to-top {
-  margin-right: 15px;
+  margin-right: 30px;
 }
 
 .sorting-icon {
