@@ -455,11 +455,11 @@ img {
   display: block;
 }
 
-.home-nav a {
+ .site-navigation .nav-link-first {
   padding-left: 54px;
 }
 
-.contacts-nav a {
+.site-navigation .nav-link-last {
   padding-right: 53px;
   padding-left: 33px;
 }
@@ -1043,10 +1043,6 @@ img {
   width: 400px;
   margin: 0;
   padding: 0;
-}
-
-.services-slides {
-  
 }
 
 .slide {
