@@ -455,11 +455,11 @@ img {
   display: block;
 }
 
-.site-navigation li:first-child a {
+.home-nav a {
   padding-left: 54px;
 }
 
-.site-navigation li:last-child a {
+.contacts-nav a {
   padding-right: 53px;
   padding-left: 33px;
 }
@@ -499,6 +499,7 @@ img {
   padding-top: 21px;
   padding-bottom: 22px;
   padding-left: 23px;
+  padding-right: 100px;
 }
 
 .tile .title {
@@ -917,7 +918,7 @@ img {
   background-color: #f4f8fa;
   font-family: "Cuprum", "Arial", sans-serif;
   padding-top: 62px;
-  padding-bottom: 101px;
+  padding-bottom: 34px;
   margin-bottom: 50px;
 }
 
@@ -949,10 +950,6 @@ img {
   margin: 0;
   width: 400px;
   margin-bottom: 69px;
-}
-
-.services-slider {
-  position: relative;
 }
 
 .services-choice {
@@ -1011,6 +1008,15 @@ img {
   color: #32425c;
 }
 
+.services-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .services-choice .slide-transfer {
   background-color: #ffffff;
   color: #32425c;
@@ -1039,14 +1045,16 @@ img {
   padding: 0;
 }
 
+.services-slides {
+  
+}
+
 .slide {
   background-repeat: no-repeat;
-  position: absolute;
-  top: -5px;
-  right: -10px;
   display: none;
-  width: 630px;
-  height: 255px;
+  width: 620px;
+  min-height: 255px;
+  margin-top: -5px;
 }
 
 .services-transfer {
@@ -1056,10 +1064,16 @@ img {
   display: block;
 }
 
+.services-transfer .slide-text {
+  width: 275px;
+  padding-right: 125px;
+}
+
 .services-garantie {
   background-image: url(../img/bg-guarantee.png);
   background-size: 389px 283px;
-  background-position: 238px 6px;
+  background-position: 241px 6px;
+  padding-left: 10px;
 }
 
 .services-garantie .slide-text {
@@ -1070,7 +1084,7 @@ img {
 .services-credit {
   background-image: url(../img/bg-credit.png);
   background-size: 465px 285px;
-  background-position: 165px 5px;
+  background-position: 155px 5px;
 }
 
 .credit-btn {
@@ -1360,12 +1374,13 @@ img {
   margin-bottom: 20px;
 }
 
-.filter-producers legend {
+.filter-producers legend,
+.filter-battery legend {
   position: relative;
 }
 
 .filter-producers legend::before,
-.filter-producers legend::after {
+.filter-battery legend::before {
   content: "";
   position: absolute;
   top: -17px;
@@ -1373,10 +1388,6 @@ img {
   width: 220px;
   height: 1px;
   background-color: #e5e5e5;
-}
-
-.filter-producers legend::after {
-  top: 247px;
 }
 
 .producers,
@@ -1453,6 +1464,7 @@ img {
   padding: 0 39px;
   padding-top: 10px;
   padding-bottom: 8px;
+  cursor: pointer;
 }
 
 .products {
@@ -1470,6 +1482,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
+  padding-bottom: 9px;
   padding-left: 20px;
   margin-bottom: 20px;
 }
